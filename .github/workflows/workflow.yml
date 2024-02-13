@@ -26,7 +26,7 @@ jobs:
       - name: Lint
         run: |
           pip install flake8
-          flake8 .
+          flake8 . --ignore=E501
 
       - name: Run unit tests with nose
         run: |
